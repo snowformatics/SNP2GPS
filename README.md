@@ -10,6 +10,7 @@ SNP2GPS is a bioinformatics tool for genomic data processing. It enables the con
 
 - Convert VCF files to Zarr and preprocess genotype/GPS data
 - Filter SNPs and impute missing genotypes
+- GPS quality check
 - Train neural networks to predict geographic locations in latlon or sphere mode
 - Evaluate predictions with random validation sets and GPS quality checks
 - Generate visualizations, interactive maps, and an HTML summary report
@@ -194,6 +195,32 @@ python build_full_report.py \
     --metadata_tsv example_gps.txt \
     --run_folder results/0
 ```
+---
+## 🧭 GPS Quality Check (`check` command)
+
+SNP2GPS includes a preprocessing step to **validate and clean GPS metadata** before model training.
+
+### What it does
+
+The `check` command runs a quality control pipeline on your GPS file to ensure that coordinates are consistent, valid, and usable for training.
+
+It performs:
+
+- Validation of required columns (`sampleID`, coordinates, metadata)  
+- Detection of missing or invalid coordinates  
+- Conversion of coordinate formats to numeric values  
+- Identification of problematic entries (e.g. swapped latitude/longitude)  
+- Basic consistency checks between samples and metadata  
+
+### Why this is important
+
+Accurate geographic prediction strongly depends on the quality of input coordinates. Errors in GPS data can lead to:
+
+- Incorrect model training  
+- Inflated prediction errors  
+- Misleading validation results  
+
+Running the GPS check step ensures your dataset is **clean, aligned, and reliable** before training.
 
 ---
 
