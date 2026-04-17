@@ -1,6 +1,6 @@
 # SNP2GPS
 
-![SNP2GPS Logo](https://github.com/snowformatics/SNP2GPS/blob/37b24ed5a46ad5e75ea5fbb47651088a977fd311/logo.PNG)
+![SNP2GPS Logo](https://github.com/snowformatics/SNP2GPS/blob/dd37d6269e3b4d6ee4e62754f545072de8b86fb6/logo.PNG)
 
 SNP2GPS is a bioinformatics tool for genomic data processing. It enables the conversion of VCF files to Zarr format, handles genotype and phenotype data, and performs machine learning–based prediction of sample geographic locations based on SNP data. The tool includes data processing, imputation, filtering, model training using neural networks, validation, visualization, and generation of an HTML report.
 
@@ -196,7 +196,8 @@ python build_full_report.py \
     --run_folder results/0
 ```
 ---
-## 🧭 GPS Quality Check (`check` command)
+
+## 🧭GPS Quality Check (`check` command)
 
 SNP2GPS includes a preprocessing step to **validate and clean GPS metadata** before model training.
 
