@@ -348,14 +348,6 @@ The HTML report can include:
 
 ---
 
-## 🧬 **References**
-
-> Battey CJ, Ralph PL, Kern AD (2020)  
-> Predicting geographic location from genetic variation with deep neural networks  
-> https://doi.org/10.7554/eLife.54507  
-
----
-
 ## 📄 **License**
 
 This project is licensed under the GNU General Public License v3.0 (GPL-3.0)
