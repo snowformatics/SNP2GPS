@@ -299,14 +299,14 @@ The VCF file should follow the standard format:
 
 Tab-separated `.txt` file with required columns:
 
-- **sampleID**  
-- **x**  
-- **y**  
+- **ID**  
+- **Latitude**  
+- **Longitude**  
 
 Example:
 
 ```text
-sampleID	x	y
+ID	lat	lon
 ERX2583486	31.5	121.09
 ERX2583566	35.46	116.48
 ERX2583489	31.4	120.17
